@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- For parallel runs use: <suite parallel="methods" thread-count="3"> (driver is ThreadLocal, so it is safe). -->
+<suite name="Skeleton Suite" verbose="1">
+    <listeners>
+        <listener class-name="com.skeleton.reporting.TestListener"/>
+    </listeners>
+
+    <test name="Regression">
+        <packages>
+            <package name="com.skeleton.tests"/>
+        </packages>
+    </test>
+</suite>
